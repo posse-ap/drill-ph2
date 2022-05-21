@@ -1,8 +1,16 @@
-# 17週目ミニドリル
+# 17週目ミニドリル 1問目
 
-# やり方
+# 事前確認
 
-question-1
-question-2
-question-3
-の順で対応してください
+1. docker compose up してください。
+2. localhost:8080にアクセスしてください。以下のように数字が表示されることを確認してください。
+
+![picture 8](images/d711fcedea62e634008fa3494322232c8b2d7061ad5f342573c4dc84d290508c.png)  
+
+
+3. docker compose downしてください
+
+# 問題
+
+現在localhost:8080でアクセスできるが、localhost:3000でアクセスできるようにしてください。
+※アクセスできるとは先ほどの数字が画面に表示されることです
