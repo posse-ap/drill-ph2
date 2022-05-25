@@ -18,8 +18,7 @@ docker run -it --rm week18-2
 
 ![picture 5](./images/40c557f89e934c00e7a7895445082c44ffec3ce1e4f063410317c3fdfc4f2fda.png)  
 
-
-上記のようにwarningと共に `${student}@東京` と出力されています。
+ `${student}@東京` と出力されています。
 
 ![picture 6](./images/2323d7488597839ef38a6f63d4133cc5c8666e9ee8d2d14aadba802b38f9f619.png)  
 
