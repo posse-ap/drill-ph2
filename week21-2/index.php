@@ -6,10 +6,10 @@ class Student
 
     public function __construct(string $name)
     {
-        # ここで名前を呼び出せるように値をセットする
+        $this->name = $name;
     }
 }
 
-$student = "ここでインスタンス作成する";
+$student = new Student('初期化したよ');
 
 print_r($student->name . PHP_EOL);
