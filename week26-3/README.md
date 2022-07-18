@@ -11,4 +11,4 @@
 week26-1で立ち上げたcontainer内でmysqlに接続してください
 mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
-![picture 6](../images/419465b20db537440082a940e8919100d89c64c0c0bc8951346568bd2f77316c.png)  
+![picture 6](./images/419465b20db537440082a940e8919100d89c64c0c0bc8951346568bd2f77316c.png)  
