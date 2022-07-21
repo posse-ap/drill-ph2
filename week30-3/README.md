@@ -8,7 +8,7 @@
 上記sqlの?部分に適切な処理を入れてください
 
 ### 終了条件
-containerを立ち上げ、containerのmysqlに接続してください
+30-2で立ち上げたcontainerのmysqlに接続してください
 mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
 ![picture 13](./images/6f7c9f519364e4f667c055757dbd83e41015c93593ebb747e78580fb455ae83a.png)  
