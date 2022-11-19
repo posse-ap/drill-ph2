@@ -5,13 +5,13 @@
 エラーを解消し、if文を使ってみる
 
 ```
-docker build -t week19-2 .
+docker build -t week19-1 .
 ```
 
 でbuildしたのちに
 
 ```
-docker run -it --rm week19-2
+docker run -it --rm week19-1
 ```
 
 を実行してみてください
