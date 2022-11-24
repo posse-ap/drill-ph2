@@ -2,4 +2,4 @@
 
 $number = "100";
 
-var_dump((?)$number);
+var_dump($number);
