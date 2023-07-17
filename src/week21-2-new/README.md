@@ -8,7 +8,7 @@
 select orders.name, order_id, sum(price * quantity) total from order_details 
 join orders on orders.id = order_details.order_id
 group by order_id
-having total > 10000
+? total > 10000
 ```
 上記sqlの?部分に適切な処理を入れてください
 
