@@ -1,29 +1,20 @@
-# 19週目ミニドリル 2問目
+# 26週目ミニドリル 1問目
 
 ## 問題
 
-エラーを解消し、switch文を使ってみる
+注文ごと商品の量を算出してください
 
-```
-docker compose up
-```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week19-2/index.php
-```
-
-を実行してみてください
-
-```
-Parse error: syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/week19-2/index.php on line 14
-```
-
-エラーが出力されています。
-
-ランダムで都道府県が表示されるように修正してください
+`select order_id 注文ID, ? 注文した商品の量 from order_details group by order_id;`
+上記sqlの?部分に適切な処理を入れてください
 
 ### 終了条件
-- ランダムで都道府県が表示されること
+containerを立ち上げ、containerのmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
+```
++------+---------------+
+|    1 |            14 |
+|    2 |            11 |
+|    3 |            13 |
++------+---------------+
+```
