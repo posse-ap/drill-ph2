@@ -2,7 +2,7 @@
 
 ## 問題
 
-docker compose upしたのちにlocalhost:8080/week24-1/index.phpにアクセスするとaエラーが表示されます
+docker compose upしたのちにlocalhost:8080/week24-1/index.phpにアクセスするとエラーが表示されます
 
 ```
 SQLSTATE[HY000] [2002] No such file or directory

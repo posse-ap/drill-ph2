@@ -1,6 +1,6 @@
 <?php
 
-$host = ""; #ここにhostを指定する
+$host = "db"; #ここにhostを指定する
 $dbname = "posse";
 $user = "root";
 $password = "password";

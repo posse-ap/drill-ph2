@@ -1,18 +1,18 @@
 <?php
 
 $host = "db";
-$dbname = "posse";
+$dbname = "ph2drill";
 $user = "root";
 $password = "password";
 
 $create_table_sql = <<<SQL
-   ??? IF NOT EXISTS `students` (
+   CREATE TABLE IF NOT EXISTS `people` (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
 	name VARCHAR(255) COMMENT '名前',
 	age INT(3) COMMENT '年齢',
 	created_at DATETIME COMMENT '作成日時',
     updated_at DATETIME COMMENT '更新日時'
-   ) COMMENT='学生';
+   ) COMMENT='人';
 SQL;
 
 try {
