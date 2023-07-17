@@ -2,4 +2,6 @@
 
 $number = "100";
 
-var_dump($number);
+$string = (int)$number;
+
+var_dump($string);
