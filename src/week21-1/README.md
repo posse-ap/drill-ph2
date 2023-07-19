@@ -1,22 +1,24 @@
-# 21週目ミニドリル 1問目
+# 27週目ミニドリル 1問目
 
 ## 問題
 
-クラスからインスタンスを作成したい
-
-index.phpの8行目に適切な処理を記入して「名前だよ」と表示されるようにしてください
+注文者ごとの注文代金を算出してください
 
 ```
-docker compose up
+select ?, order_id, sum(price * quantity) total from order_details 
+join orders on orders.id = order_details.order_id
+group by order_id
 ```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week21-1/index.php
-```
-
-を実行してみてください
+注文した人の名前を表示するため上記sqlの?部分に適切な処理を入れてください
 
 ### 終了条件
-  - 「名前だよ」と表示されること
+containerを立ち上げ、containerのmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
+
+```
++--------------------+----------+-------+
+| しのけんさん |        1 |  5000 |
+| おざっちさん |        2 | 33000 |
+| こたにさん    |        3 | 15000 |
++--------------------+----------+-------+
+```

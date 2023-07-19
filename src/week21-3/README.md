@@ -1,28 +1,26 @@
-# 21週目ミニドリル 3問目
+# 27週目ミニドリル 3問目
 
 ## 問題
 
-適切なアクセス修飾子を設定したい。
+注文(orders)テーブルにデータを保存はできたものの、バグでその注文の注文詳細を注文詳細(order_details)テーブルに保存することに失敗しました。
+注文詳細が紐づかない注文テーブルのゴミデータを抽出したい
 
 ```
-docker compose up
+select orders.name 注文者 from orders 
+where ??? (
+    select * from order_details where order_details.order_id = orders.id
+    );
 ```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week21-3/index.php
-```
-
-を実行してみてください
-
-現在、実行すると以下のように表示されます。
-
-`hsmt@チームGAFA`
-
-index.phpの10行目でアクセス修飾子を適切なものに変更してください。
-
-正しく修正すれば、`Cannot access private property PosseStudent::$name`と表示されます
+上記sqlの?部分に適切なサブクエリを入れてください
 
 ### 終了条件
-  - Cannot access private property PosseStudent::$nameと表示されること
+week27-1で立ち上げたcontainer内でmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
+
+```
++--------------------+
+| name               |
++--------------------+
+| いわむらさん |
++--------------------+
+```
