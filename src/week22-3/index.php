@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-  <?= ??? ?>
+  <?=$_POST["keyword"]; ?>
   <form action="./index.php" method="POST">
     <input type="text" name="keyword">
     <button type='submit'>submit</button>

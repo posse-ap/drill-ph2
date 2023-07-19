@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-  <?php ???(dirname(__FILE__) . "/components/header.php"); ?>
+  <?php include(dirname(__FILE__) . "/components/header.php"); ?>
 </body>
 </html>
