@@ -11,15 +11,15 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week18-1/index.php
+docker compose run --rm php php week22-1/index.php
 ```
 
 を実行してみてください
 
 ```
-Warning: A non-numeric value encountered in /var/www/html/week18-1/index.php on line 5
+Warning: A non-numeric value encountered in /var/www/html/week22-1/index.php on line 5
 
-Warning: A non-numeric value encountered in /var/www/html/week18-1/index.php on line 5
+Warning: A non-numeric value encountered in /var/www/html/week22-1/index.php on line 5
 0
 ```
 

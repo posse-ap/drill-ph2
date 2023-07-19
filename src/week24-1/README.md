@@ -11,13 +11,13 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week20-1/index.php
+docker compose run --rm php php week24-1/index.php
 ```
 
 を実行してみてください
 
 ```
-Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week20-1/index.php on line 3
+Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week24-1/index.php on line 3
 ```
 
 エラーが出力されます。

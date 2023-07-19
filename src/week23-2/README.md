@@ -11,13 +11,13 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week19-2/index.php
+docker compose run --rm php php week23-2/index.php
 ```
 
 を実行してみてください
 
 ```
-Parse error: syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/week19-2/index.php on line 14
+Parse error: syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/week23-2/index.php on line 14
 ```
 
 エラーが出力されています。

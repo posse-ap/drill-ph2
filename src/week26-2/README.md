@@ -20,7 +20,7 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week21-2/index.php
+docker compose run --rm php php week26-2/index.php
 ```
 
 ### 終了条件

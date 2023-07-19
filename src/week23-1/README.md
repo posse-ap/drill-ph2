@@ -11,13 +11,13 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week19-1/index.php
+docker compose run --rm php php week23-1/index.php
 ```
 
 を実行してみてください
 
 ```
-Parse error: syntax error, unexpected '?', expecting end of file in /var/www/html/week19-1/index.php on line 7
+Parse error: syntax error, unexpected '?', expecting end of file in /var/www/html/week23-1/index.php on line 7
 ```
 
  エラーが出力されています。

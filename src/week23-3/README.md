@@ -11,7 +11,7 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week19-3/index.php
+docker compose run --rm php php week23-3/index.php
 ```
 
 を実行してみてください

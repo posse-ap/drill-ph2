@@ -4,10 +4,10 @@
 
 悪意あるスクリプトをサニタイズする
 
-docker compose upしたのちにlocalhost:8080/week-23-1/index.phpにアクセスするとaエラーが表示されます
+docker compose upしたのちにlocalhost:8080/week27-1/index.phpにアクセスするとaエラーが表示されます
 
 ```
-Parse error: syntax error, unexpected '??' (T_COALESCE) in /var/www/html/week23-1/index.php on line 10
+Parse error: syntax error, unexpected '??' (T_COALESCE) in /var/www/html/week27-1/index.php on line 10
 ```
 
 悪意あるスクリプトを無力化するためサニタイズしたい。

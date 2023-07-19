@@ -9,6 +9,6 @@ index.phpの1行目でcookieにキーと値をセットしています。
 これを11行目で値を表示するように適切な処理を書いてください
 
 ### 終了条件
-docker compose upしたのちにlocalhost:8080/week-23-2/index.phpにアクセスし
+docker compose upしたのちにlocalhost:8080/week27-2/index.phpにアクセスし
 画面上にcookieでセットしたvalueが表示されること
 

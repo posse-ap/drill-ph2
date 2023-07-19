@@ -14,7 +14,7 @@ where ??? (
 上記sqlの?部分に適切なサブクエリを入れてください
 
 ### 終了条件
-week27-1で立ち上げたcontainer内でmysqlに接続してください
+week21-1で立ち上げたcontainer内でmysqlに接続してください
 mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
 ```
