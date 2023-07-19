@@ -1,3 +1,4 @@
+<?php setcookie("key", "valueだよ") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

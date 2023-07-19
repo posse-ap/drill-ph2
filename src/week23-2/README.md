@@ -1,14 +1,29 @@
-# 23週目ミニドリル 2問目
+# 19週目ミニドリル 2問目
 
 ## 問題
 
-Cookieを利用する
+エラーを解消し、switch文を使ってみる
 
-index.phpの1行目でcookieにキーと値をセットしています。
+```
+docker compose up
+```
 
-これを11行目で値を表示するように適切な処理を書いてください
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week19-2/index.php
+```
+
+を実行してみてください
+
+```
+Parse error: syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/week19-2/index.php on line 14
+```
+
+エラーが出力されています。
+
+ランダムで都道府県が表示されるように修正してください
 
 ### 終了条件
-docker compose upしたのちにlocalhost:8080/week-23-2/index.phpにアクセスし
-画面上にcookieでセットしたvalueが表示されること
+- ランダムで都道府県が表示されること
 

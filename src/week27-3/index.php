@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    # nameというkeyに、POSSEという値をセットする
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-  <?= ??? ?>
+  <?= $_SESSION["name"] ?>
 </body>
 </html>

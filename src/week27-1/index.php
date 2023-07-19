@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-  <?= ??? ?>
+  <?= ???("<script>alert('hoge')</script>") ?>
 </body>
 </html>

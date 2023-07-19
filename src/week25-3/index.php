@@ -1,28 +1,16 @@
-<?php
-
-interface IPosseStudent
-{
-    public function get_name(): string;
-}
-
-class PosseStudent implements IPosseStudent
-{
-    public string $name;
-
-    public function __construct(string $name)
-    {
-        $this->name = $name;
-    }
-
-    public function get_name(): string
-    {
-        return $this->name;
-    }
-}
-
-try {
-    $student = new PosseStudent("hsmt@チームGAFAM");
-    print_r($student->name . PHP_EOL);
-} catch(ERROR $e){
-    print_r($e->getMessage() . PHP_EOL);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <?= ??? ?>
+  <form action="./index.php" method="POST">
+    <input type="text" name="keyword">
+    <button type='submit'>submit</button>
+  </form>
+</body>
+</html>
