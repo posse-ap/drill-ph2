@@ -2,12 +2,27 @@
 
 ## 問題
 
-Sessionを利用する
+ifの条件節を修正したい
 
-index.phpの3行目でsessionにキーと値をセットしてください。
-キーはname、値はPOSSEとしてください。
+```
+docker compose up
+```
+
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week23-3/index.php
+```
+
+を実行してみてください
+
+`文字列の0です` と出力されます。
+
+`数字の0です` と表示されるようにindex.phpの5行目を修正してください
 
 ### 終了条件
-docker compose upしたのちにlocalhost:8080/week-23-3/index.phpにアクセスし
-画面上にsessionでセットした値が表示されること
+- `数字の0です` と表示されること
 
+### 注意点
+
+$numberの値を変更しないでください

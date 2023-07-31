@@ -2,12 +2,26 @@
 
 ## 問題
 
-formで入力した値を取得する
+キャストしたい
 
-index.phpの10行目の???に部分に適切な処理を記述し、formで入力した値を取得してください。
+```
+docker compose up
+```
+
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week22-3/index.php
+```
+
+を実行してみてください
+
+ `string(3) "100"` と出力されます。
+
+ `int(100)` と表示されるように修正してください
+
+index.phpの5行目の `$number` の前に適切なphpの処理を書いてください
 
 ### 終了条件
-docker compose upしたのちにlocalhost:8080/week-22-3/index.phpにアクセスし
-入力欄に適当な文字を入れてsubmitボタンを押下
-画面に入力した値が表示されると完了です。
+- `int(100)` と表示されること
 

@@ -2,10 +2,23 @@
 
 ## 問題
 
-クエリパラメータを取得する
+文字列内の変数を展開してください
 
-index.phpの10行目の???に部分に適切な処理を記述し、クエリパラメータを取得してください。
+```
+docker compose up
+```
+
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week22-2/index.php
+```
+
+を実行してみてください
+
+ `${student}@東京` と出力されます。
+
+ `学生2@東京` と表示されるように修正してください
 
 ### 終了条件
-docker compose upしたのちにlocalhost:8080/week22-2/index.php?keyword=hogeにアクセスし、画面にhogeと表示されると完了です。
-
+- `学生2@東京` と表示されること

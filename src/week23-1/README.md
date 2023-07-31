@@ -2,16 +2,30 @@
 
 ## 問題
 
-悪意あるスクリプトをサニタイズする
-
-docker compose upしたのちにlocalhost:8080/week-23-1/index.phpにアクセスするとaエラーが表示されます
+エラーを解消し、if文を使ってみる
 
 ```
-Parse error: syntax error, unexpected '??' (T_COALESCE) in /var/www/html/week23-1/index.php on line 10
+docker compose up
 ```
 
-悪意あるスクリプトを無力化するためサニタイズしたい。
-index.phpの???に適切な処理を記述し、以下のようにスクリプトが文字列として表示されるようにしたい。
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week23-1/index.php
+```
+
+を実行してみてください
+
+```
+Parse error: syntax error, unexpected '?', expecting end of file in /var/www/html/week23-1/index.php on line 7
+```
+
+ エラーが出力されています。
+
+ `falseと評価されました` と表示されるように修正してください
+
+index.phpの７行目の `?` 部分に適切なphpの処理を書いてください
+
 ### 終了条件
-`<script>alert('hoge')</script>`と画面に表示されること
+- `falseと評価されました` と表示されること
 

@@ -2,15 +2,27 @@
 
 ## 問題
 
-docker compose upしたのちにlocalhost:8080/week24-1/index.phpにアクセスするとaエラーが表示されます
+意図した文言だけ切り抜きたい
 
 ```
-SQLSTATE[HY000] [2002] No such file or directory
+docker compose up
 ```
 
-エラー解消するためにはindex.phpの3行目でhost指定をする必要があります。
-適切なhostを指定してください。
+でコンテナを立ち上げた後に
+
+```
+docker compose run --rm php php week24-1/index.php
+```
+
+を実行してみてください
+
+```
+Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week24-1/index.php on line 3
+```
+
+エラーが出力されます。
+
+`サントリー` と表示されるようにindex.phpの3行目の?に適切な値入れて修正してください
 
 ### 終了条件
-hostを指定し、画面に接続成功と表示されること
-
+- `サントリー` と表示されること

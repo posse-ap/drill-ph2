@@ -2,23 +2,13 @@
 
 ## 問題
 
-注文者ごとの注文代金で、注文代金が10000円以上の一覧を算出してください
+Cookieを利用する
 
-```
-select orders.name, order_id, sum(price * quantity) total from order_details 
-join orders on orders.id = order_details.order_id
-group by order_id
-having total > 10000
-```
-上記sqlの?部分に適切な処理を入れてください
+index.phpの1行目でcookieにキーと値をセットしています。
+
+これを11行目で値を表示するように適切な処理を書いてください
 
 ### 終了条件
-week27-1で立ち上げたcontainer内でmysqlに接続してください
-mysqlでSQLを実行した結果、以下のように表示されれば完了。
+docker compose upしたのちにlocalhost:8080/week27-2/index.phpにアクセスし
+画面上にcookieでセットしたvalueが表示されること
 
-```
-+--------------------+----------+-------+
-| おざっちさん |        2 | 33000 |
-| こたにさん    |        3 | 15000 |
-+--------------------+----------+-------+
-```

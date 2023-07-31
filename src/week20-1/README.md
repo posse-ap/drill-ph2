@@ -1,28 +1,16 @@
-# 20週目ミニドリル 1問目
+# 20週目ミニドリル 1 問目
 
 ## 問題
 
-意図した文言だけ切り抜きたい
+docker compose up したのちに localhost:8080/week20-1/index.php にアクセスするとエラーが表示されます
 
 ```
-docker compose up
+SQLSTATE[HY000] [2002] No such file or directory
 ```
 
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week20-1/index.php
-```
-
-を実行してみてください
-
-```
-Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week20-1/index.php on line 3
-```
-
-エラーが出力されます。
-
-`サントリー` と表示されるようにindex.phpの3行目の?に適切な値入れて修正してください
+エラー解消するためには index.php の 3 行目で host 指定をする必要があります。
+適切な host を指定してください。
 
 ### 終了条件
-- `サントリー` と表示されること
+
+host を指定し、画面に接続成功と表示されること
