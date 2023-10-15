@@ -1,7 +1,7 @@
 <?php
 
 $host = "db";
-$dbname = "week31";
+$dbname = "ph2drill";
 $user = "root";
 $password = "password";
 
