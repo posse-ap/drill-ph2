@@ -30,3 +30,4 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d
       - ./db/:/etc/mysql/conf.d
+      - ./src/week18-1:/var/www/html
