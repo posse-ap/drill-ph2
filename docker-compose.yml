@@ -7,13 +7,13 @@ services:
       - "8080:80"
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
-      - ???:/var/www/html
+      - ./src:/var/www/html
     depends_on:
       - php
   php:
     build: ./php
     volumes:
-      - ???:/var/www/html
+      - ./src:/var/www/html
     depends_on:
       - db
   db:
@@ -30,3 +30,4 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d
       - ./db/:/etc/mysql/conf.d
+      - ./src/week18-1:/var/www/html
