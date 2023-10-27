@@ -1,6 +1,7 @@
 CREATE DATABASE IF NOT EXISTS ph2drill;
 USE ph2drill;
 
+DROP TABLE IF EXISTS books;
 ? ? books (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     title VARCHAR(255) COMMENT '本の名前',

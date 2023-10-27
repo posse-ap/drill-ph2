@@ -1,6 +1,7 @@
 CREATE DATABASE IF NOT EXISTS ph2drill;
 USE ph2drill;
 
+DROP TABLE IF EXISTS students;
 CREATE TABLE students (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     name VARCHAR(255) COMMENT '学生名',
@@ -14,6 +15,7 @@ INSERT INTO students VALUES
 (3, 'こたにさん', now(), now()),
 (4, 'いわむらさん', now(), now());
 
+DROP TABLE IF EXISTS studies;
 CREATE TABLE studies (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     student_id INT COMMENT '注文ID',
@@ -61,6 +63,7 @@ INSERT INTO studies VALUES
 (33, 1, '2022-06-30', 1,'Nginx', now(), now()),
 (34, 2, '2022-06-30', 2,'Nginx', now(), now());
 
+DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     name VARCHAR(255) COMMENT 'ユーザ名',
@@ -69,6 +72,7 @@ CREATE TABLE orders (
     updated_at DATETIME COMMENT '更新日時'
 );
 
+DROP TABLE IF EXISTS order_details;
 CREATE TABLE order_details (
     id INT(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     order_id INT COMMENT '注文ID',
