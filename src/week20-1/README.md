@@ -4,6 +4,8 @@
 
 docker compose up したのちに localhost:8080/week20-1/index.php にアクセスするとエラーが表示されます
 
+※ localhost:3000 でアクセスできるように変更している場合、①localhost:8080 にアクセスできるようにする、あるいは ②localhost:3000 を用いてアクセスするようにしてください。
+
 ```
 SQLSTATE[HY000] [2002] No such file or directory
 ```
