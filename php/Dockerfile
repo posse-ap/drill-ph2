@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:8-fpm
 
 COPY php.ini /usr/local/etc/php/
 
