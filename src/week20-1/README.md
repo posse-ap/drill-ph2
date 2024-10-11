@@ -2,17 +2,19 @@
 
 ## 問題
 
-docker compose up したのちに localhost:8080/week20-1/index.php にアクセスするとエラーが表示されます
+注文ごとに商品の種類が何種類かを算出してください
 
-※ localhost:3000 でアクセスできるように変更している場合、①localhost:8080 にアクセスできるようにする、あるいは ②localhost:3000 を用いてアクセスするようにしてください。
-
-```
-SQLSTATE[HY000] [2002] No such file or directory
-```
-
-エラー解消するためには index.php の 3 行目で host 指定をする必要があります。
-適切な host を指定してください。
+`select order_id 注文ID, ？ 商品の種類数 from order_details group by order_id;`
+上記sqlの?部分に適切な処理を入れてください
 
 ### 終了条件
+containerを立ち上げ、containerのmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
-host を指定し、画面に接続成功と表示されること
+```
++------+-------------------------+
+|    1 |                       3 |
+|    2 |                       2 |
+|    3 |                       3 |
++------+-------------------------+
+```
