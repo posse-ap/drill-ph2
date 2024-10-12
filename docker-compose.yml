@@ -20,7 +20,6 @@ services:
     build:
       context: .
       dockerfile: "./db/Dockerfile"
-    command: --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_DATABASE=ph2drill
       - MYSQL_ROOT_PASSWORD=password
