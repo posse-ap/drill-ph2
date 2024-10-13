@@ -13,7 +13,7 @@ ENV LC_ALL ja_JP.UTF-8
 # タイムゾーン(東京)
 ENV TZ Asia/Tokyo
 # MySQLのconfigファイル(my.cnf)をコピー
-COPY ./docker/conf.d/my.cnf /etc/my.cnf
+COPY ./db/conf.d/my.cnf /etc/my.cnf
 
 # キャッシュと不要なファイルの削除
 RUN microdnf clean all
