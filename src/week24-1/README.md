@@ -2,27 +2,10 @@
 
 ## 問題
 
-意図した文言だけ切り抜きたい
+クエリパラメータを取得する
 
-```
-docker compose up
-```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week24-1/index.php
-```
-
-を実行してみてください
-
-```
-Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week24-1/index.php on line 3
-```
-
-エラーが出力されます。
-
-`サントリー` と表示されるようにindex.phpの3行目の?に適切な値入れて修正してください
+index.phpの10行目の???に部分に適切な処理を記述し、クエリパラメータを取得してください。
 
 ### 終了条件
-- `サントリー` と表示されること
+docker compose upしたのちにlocalhost:8080/week24-1/index.php?keyword=hogeにアクセスし、画面にhogeと表示されると完了です。
+
