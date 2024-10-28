@@ -2,7 +2,7 @@
 
 ## 問題
 
-エラーを解消し、switch文を使ってみる
+ifの条件節を修正したい
 
 ```
 docker compose up
@@ -11,19 +11,14 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week23-2/index.php
+docker compose run --rm php php week24-2/index.php
 ```
 
 を実行してみてください
 
-```
-Parse error: syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/week23-2/index.php on line 14
-```
+ `12345` と出力されています。
 
-エラーが出力されています。
-
-ランダムで都道府県が表示されるように修正してください
+ `1-2-3-4-5` と表示されるようにindex.phpの3行目を修正してください
 
 ### 終了条件
-- ランダムで都道府県が表示されること
-
+- `1-2-3-4-5` と表示されること

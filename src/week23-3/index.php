@@ -1,11 +1,11 @@
 <?php
 
-$number = 0;
-
-if ($number == "0") {
-    echo "文字列の0です";
-} else {
-    echo "数字の0です";
+function round_number( $number ){
+    return round($number);
 }
 
-echo PHP_EOL;
+$numbers = [1.24,2.32,3.56,4.92,5.02];
+
+$rounded_numbers = array_map(?, ?);
+
+print_r($rounded_numbers);
