@@ -2,23 +2,18 @@
 
 ## 問題
 
-ifの条件節を修正したい
+クエリパラメータを取得する
 
-```
-docker compose up
-```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week24-2/index.php
-```
-
-を実行してみてください
-
- `12345` と出力されています。
-
- `1-2-3-4-5` と表示されるようにindex.phpの3行目を修正してください
+index.phpの13行目の???に部分に適切な処理を記述し、クエリパラメータを取得してください。
+今回は複数のクエリパラメータを取得して表示する練習をしてみましょう。
+以前に学んだforやforeachを使って表示してみましょう。
 
 ### 終了条件
-- `1-2-3-4-5` と表示されること
+docker compose upしたのちにlocalhost:8080/week24-1/index.php?keyword1=hoge&keyword2=fugaにアクセスし、画面に以下のように表示されると完了です。
+
+```
+キー:keyword1
+値:hoge
+キー:keyword2
+値:fuga
+```

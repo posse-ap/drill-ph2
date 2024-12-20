@@ -2,23 +2,23 @@
 
 ## 問題
 
-文字列内の変数を展開してください
+注文者ごとの注文代金で、注文代金が10000円以上の一覧を算出してください
 
 ```
-docker compose up
+select orders.name, order_id, sum(price * quantity) total from order_details 
+join orders on orders.id = order_details.order_id
+group by order_id
+? total > 10000
 ```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week22-2/index.php
-```
-
-を実行してみてください
-
- `${student}@東京` と出力されます。
-
- `学生2@東京` と表示されるように修正してください
+上記sqlの?部分に適切な処理を入れてください
 
 ### 終了条件
-- `学生2@東京` と表示されること
+week21-1で立ち上げたcontainer内でmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
+
+```
++--------------------+----------+-------+
+| おざっちさん |        2 | 33000 |
+| こたにさん    |        3 | 15000 |
++--------------------+----------+-------+
+```

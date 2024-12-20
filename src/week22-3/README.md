@@ -2,26 +2,25 @@
 
 ## 問題
 
-キャストしたい
+注文(orders)テーブルにデータを保存はできたものの、バグでその注文の注文詳細を注文詳細(order_details)テーブルに保存することに失敗しました。
+注文詳細が紐づかない注文テーブルのゴミデータを抽出したい
 
 ```
-docker compose up
+select orders.name 注文者 from orders 
+where ??? (
+    select * from order_details where order_details.order_id = orders.id
+    );
 ```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week22-3/index.php
-```
-
-を実行してみてください
-
- `string(3) "100"` と出力されます。
-
- `int(100)` と表示されるように修正してください
-
-index.phpの5行目の `$number` の前に適切なphpの処理を書いてください
+上記sqlの?部分に適切なサブクエリを入れてください
 
 ### 終了条件
-- `int(100)` と表示されること
+week21-1で立ち上げたcontainer内でmysqlに接続してください
+mysqlでSQLを実行した結果、以下のように表示されれば完了。
 
+```
++--------------------+
+| name               |
++--------------------+
+| いわむらさん |
++--------------------+
+```

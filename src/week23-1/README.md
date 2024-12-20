@@ -2,7 +2,7 @@
 
 ## 問題
 
-エラーを解消し、if文を使ってみる
+意図した文言だけ切り抜きたい
 
 ```
 docker compose up
@@ -11,21 +11,18 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week23-1/index.php
+docker compose run --rm php php week24-1/index.php
 ```
 
 を実行してみてください
 
 ```
-Parse error: syntax error, unexpected '?', expecting end of file in /var/www/html/week23-1/index.php on line 7
+Parse error: syntax error, unexpected '?', expecting ')' in /var/www/html/week24-1/index.php on line 3
 ```
 
- エラーが出力されています。
+エラーが出力されます。
 
- `falseと評価されました` と表示されるように修正してください
-
-index.phpの７行目の `?` 部分に適切なphpの処理を書いてください
+`サントリー` と表示されるようにindex.phpの3行目の?に適切な値入れて修正してください
 
 ### 終了条件
-- `falseと評価されました` と表示されること
-
+- `サントリー` と表示されること

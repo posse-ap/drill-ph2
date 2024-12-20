@@ -1,4 +1,4 @@
-# 23週目ミニドリル 3問目
+# 24週目ミニドリル 3問目
 
 ## 問題
 
@@ -11,18 +11,18 @@ docker compose up
 でコンテナを立ち上げた後に
 
 ```
-docker compose run --rm php php week23-3/index.php
+docker compose run --rm php php week24-3/index.php
 ```
 
 を実行してみてください
 
-`文字列の0です` と出力されます。
+```
+Parse error: syntax error, unexpected '?' in /var/www/html/week24-3/index.php on line 9
+```
 
-`数字の0です` と表示されるようにindex.phpの5行目を修正してください
+ エラーが出力されます。
+
+四捨五入された数字が表示されるようにindex.phpの9行目の?を修正してください
 
 ### 終了条件
-- `数字の0です` と表示されること
-
-### 注意点
-
-$numberの値を変更しないでください
+  - 画像のように四捨五入された数字が表示されること

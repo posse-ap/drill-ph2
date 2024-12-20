@@ -2,27 +2,12 @@
 
 ## 問題
 
-ifの条件節を修正したい
+formで入力した値を取得する
 
-```
-docker compose up
-```
-
-でコンテナを立ち上げた後に
-
-```
-docker compose run --rm php php week24-3/index.php
-```
-
-を実行してみてください
-
-```
-Parse error: syntax error, unexpected '?' in /var/www/html/week24-3/index.php on line 9
-```
-
- エラーが出力されます。
-
-四捨五入された数字が表示されるようにindex.phpの9行目の?を修正してください
+index.phpの10行目の???に部分に適切な処理を記述し、formで入力した値を取得してください。
 
 ### 終了条件
-  - 画像のように四捨五入された数字が表示されること
+docker compose upしたのちにlocalhost:8080/week24-3/index.phpにアクセスし
+入力欄に適当な文字を入れてsubmitボタンを押下
+画面に入力した値が表示されると完了です。
+
