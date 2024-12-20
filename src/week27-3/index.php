@@ -1,16 +1,16 @@
 <?php
-    session_start();
-    # nameというkeyに、POSSEという値をセットする
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  if (???) {
+    echo 'パスワードは4文字以上にしてください';
+  } else {
+    echo 'パスワードは4文字以上になっています';
+  }
+}
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <?= $_SESSION["name"] ?>
-</body>
-</html>
+
+<form name="test_validation" action="." method="POST">
+  <input id="password" type="text" name="password" placeholder="パスワード">
+  <input type="submit" value="送信">
+</form>

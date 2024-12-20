@@ -1,13 +1,16 @@
-<?php setcookie("key", "valueだよ") ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <?= ??? ?>
-</body>
-</html>
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  if (???) {
+    echo 'Eメールアドレスは必須項目です。';
+  } else {
+    echo 'Eメールアドレスが入力されています。';
+  }
+}
+
+?>
+
+<form name="test_validation" action="." method="POST">
+  <input id="email" type="text" name="email" placeholder="メールアドレス">
+  <input type="submit" value="送信">
+</form>

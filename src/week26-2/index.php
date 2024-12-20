@@ -1,15 +1,18 @@
 <?php
 
-class Student
-{
-    public string $name;
+session_start();
 
-    public function __construct(string $name)
-    {
-        # ここで名前を呼び出せるように値をセットする
-    }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // TODO: ここにログアウト処理を書いてください
 }
+?>
 
-$student = "ここでインスタンス作成する";
+<form action="." method="POST">
+  <input type="submit" value="ログアウト">
+</form>
 
-print_r($student->name . PHP_EOL);
+<?php if (isset($_SESSION['id'])): ?>
+  ログイン状態
+<?php else: ?>
+  ログアウト状態
+<?php endif; ?>
